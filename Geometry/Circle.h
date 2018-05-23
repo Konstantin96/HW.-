@@ -15,4 +15,5 @@ public:
 	void rotate90(){}
 	friend istream& operator >> (istream &is, Circle obj);
 	friend ostream& operator << (ostream &os, Circle obj);
+	bool operator==(Circle obj);
 };

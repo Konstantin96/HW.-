@@ -16,6 +16,11 @@ Rectangle::Rectangle(const Rectangle & obj)
 	this->b = obj.b;
 }
 
+bool Rectangle::operator==(Rectangle obj)
+{
+	return ((this->a = a) && (this->b = b));
+}
+
 istream & operator >> (istream & is, Rectangle obj)
 {
 	is >> obj.x >> obj.y >> obj.a >> obj.b;

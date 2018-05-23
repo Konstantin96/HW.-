@@ -20,6 +20,11 @@ double Circle::area()
 	return 3.14*R*R;
 }
 
+bool Circle::operator==(Circle obj)
+{
+	return R;
+}
+
 istream & operator >> (istream & is, Circle obj)
 {
 	is >> obj.x >> obj.y >> obj.R;

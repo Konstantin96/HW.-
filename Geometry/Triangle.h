@@ -19,6 +19,7 @@ public:
 	Triangle(const Triangle& obj);
 	friend istream& operator >> (istream &is, Triangle obj);
 	friend ostream& operator << (ostream &os, Triangle obj);
+	bool operator==(Triangle obj);
 
 };
 

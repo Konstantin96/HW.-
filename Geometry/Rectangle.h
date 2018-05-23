@@ -14,5 +14,5 @@ public:
 	Rectangle(const Rectangle& obj);
 	friend istream& operator >> (istream &is, Rectangle obj);
 	friend ostream& operator << (ostream &os, Rectangle obj);
-
+	 bool operator ==(Rectangle obj);
 };

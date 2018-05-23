@@ -14,4 +14,5 @@ public:
 	friend istream& operator >> (istream &is, Square obj);
 	friend ostream& operator << (ostream &os, Square obj);
 
+	bool operator ==(Square obj);
 };

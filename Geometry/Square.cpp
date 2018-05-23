@@ -11,6 +11,11 @@ double Square::area()
 	return a*b;
 }
 
+bool Square::operator==(Square obj)
+{
+	return ((this->a = a) && (this->b = b));
+}
+
 istream & operator >> (istream & is, Square obj)
 {
 	is >> obj.x >> obj.y >> obj.a >> obj.b;

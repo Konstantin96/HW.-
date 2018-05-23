@@ -21,6 +21,11 @@ Triangle::Triangle(const Triangle & obj)
 	this->c = obj.c;
 }
 
+bool Triangle::operator==(Triangle obj)
+{
+	return ((this->a = a) && (this->b = b)&&(this->c=c));
+}
+
 istream & operator >> (istream & is, Triangle obj)
 {
 	is >> obj.x >> obj.y >> obj.a >> obj.b>>obj.c;
