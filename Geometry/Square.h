@@ -11,6 +11,10 @@ public:
 	Square(const Square& obj);
 	double area();
 	void rotate90() {}
+	string nameGeo() {
+		string _Square = "Square";
+		return _Square;
+	}
 	friend istream& operator >> (istream &is, Square obj);
 	friend ostream& operator << (ostream &os, Square obj);
 

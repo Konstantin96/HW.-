@@ -4,12 +4,14 @@
 #include "Circle.h"
 
 int main() {
-	Circle A(12.5);
-	cout << "area = " << A.area() << endl;
-	Triangle B(0, 0, 5, 6, 7);
-	cout << "area = " << B.area() << endl;
-	Rectangle C(0, 0, 5, 2);
-	cout << "area = " << C.area() << endl;
+	Point **p;
+	p = new Point*[3];
+	p[0] = new Rectangle(0, 0, 4, 6);
+	p[1] = new Circle(1, 1, 5);
+	p[2] = new Triangle(2, 2, 4, 5, 6);
+
+	for (int i = 0; i < 3; i++)
+		cout <<(*p[i]).nameGeo()<<" area = "<< (*p[i]).area() << endl;
 	system("pause");
 	return 0;
 }

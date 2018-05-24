@@ -12,6 +12,10 @@ public:
 	void set_radius(double R);
 	double get_radius();
 	double area();
+	string nameGeo() {
+		string _circle = "Circle";
+		return _circle;
+	}
 	void rotate90(){}
 	friend istream& operator >> (istream &is, Circle obj);
 	friend ostream& operator << (ostream &os, Circle obj);

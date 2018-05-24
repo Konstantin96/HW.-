@@ -16,6 +16,10 @@ public:
 	}
 	void rotate90();
 	double area();
+	string nameGeo() {
+		string _Triangle = "Triangle";
+		return _Triangle;
+	}
 	Triangle(const Triangle& obj);
 	friend istream& operator >> (istream &is, Triangle obj);
 	friend ostream& operator << (ostream &os, Triangle obj);

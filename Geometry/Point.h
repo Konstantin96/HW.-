@@ -16,6 +16,7 @@ public:
 	virtual double area()=0;
 	void move(double x, double y);
 	virtual void rotate90() =0;
+	virtual string nameGeo() = 0;
 	void out_point();
 	void set_point();
 	void set_x(int _x) { x = _x; }
